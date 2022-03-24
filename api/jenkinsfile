@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                dir('flask-app') {
+                dir('api') {
                     sh "rm application/tests/test_int*"
                     sh "bash test_basic.sh"
                 }
